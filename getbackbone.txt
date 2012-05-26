@@ -1,0 +1,59 @@
+getbackbonejs.org                                                                               FORK ME
+
+                                      GET Backbone.js
+                    The quickest way to get started with Backbone.js.
+
+                      [ Documentation ] [ Git Hub ] [ Google Group ]
+
+
+
+                                [ Download ]
+
+Backbone version
+x Bonebone 0.92 (latest stable version)
+
+JavaScript libraries
+_ None
+_ jQuery (CDN)
+_ jQuery (bundled)
+_ Zepto (8k minified and gzipped)
+_ Underscore.js
+
+File/Module Loading
+_ RequireJS - Organise you code into separate files/modules
+//_ Stitch (https://github.com/sstephenson/stitch)
+//_ Lumbar ? (http://walmartlabs.github.com/lumbar/)
+
+Browser support
+_ JSON2 - Required for IE<8 and other old browsers
+- Modernize
+
+Template engines
+_ jQuery templates
+//_ Mustache / Handlebars
+
+Storage
+_ local storage adaptor
+//_ Pusher API
+
+Example application
+_ Todo
+
+                                [ Download ]
+
+Example Output:
+
+example/todo.html
+backbone.min.js
+backbone.js
+jquery.min.js
+jquery.js
+
+/components
+	/backbone/
+
+
+
+
+
+

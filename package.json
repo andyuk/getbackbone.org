@@ -1,0 +1,15 @@
+{
+  "author": "Andrew Moist <andyjm@gmail.com>",
+  "name": "getbackbone",
+  "description": "Website for getbackbone.org",
+  "version": "0.1.1",
+  "homepage": "http://getbackbone.org",
+  "main": "server.js",
+  "dependencies": {
+    "express": "2.5.x"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "0.6.17"
+  }
+}
