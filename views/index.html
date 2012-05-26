@@ -1,0 +1,114 @@
+<form action="download" method="GET">
+  <input type="submit" value="Download">
+  <fieldset>
+    <ul>
+      <li>
+        <input type="checkbox" name="package" value="backbone-0.9.2" checked disabled>
+        <label>Backbone v0.9.2 (latest)</label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Examples</legend>
+    <ul>
+      <li>
+        <input type="checkbox" name="package" value="todo;0.9.2" checked>
+        <label>To-do list example application</label>
+      </li>  
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Selector engine</legend>
+    <input type="hidden" id="selector-engine" name="package">
+    <ul>  
+      <li>
+        <input type="radio" name="selector-engine" value="jquery;0.7.1" checked>
+        <label>jQuery v1.7.1 (latest)</label>
+      </li>
+      <li>
+        <input type="radio" name="selector-engine" value="zepto">
+        <label>zepto (latest)</label>
+      </li>
+    </ul>
+  </fieldset>
+  
+  <!-- File/Module Loading -->
+  <!-- 
+  
+  * requirejs 
+  * browserify
+  * stitch
+  -->
+  
+  
+  <fieldset>
+    <legend>JavaScript libraries</legend>
+    <ul>
+      <li>
+        <input type="checkbox" name="package" value="underscore;1.3.1" checked disabled>
+        <label>underscore (latest, v1.3.1)</label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Template engine</legend>
+    <input type="hidden" id="template-engine" name="package">
+    <ul>
+      <li>
+        <input type="radio" name="template-engine" value="underscore;1.3.1" checked>
+        <label>Underscore</label>
+      </li>
+      <li>
+        <input type="radio" name="template-engine" value="mustache">
+        <label>Mustache</label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Storage</legend>
+    <ul>
+      <li>
+        <input type="checkbox" name="package" value="backbone-localstorage" checked>
+        <label>Backbone local storage</label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>Browser compatibility</legend>
+    <ul>
+      <li>
+        <input type="checkbox" name="package" value="json2" checked>
+        <label>JSON2 (Backwards compatibility with older browsers)</label>
+      </li>
+    </ul>
+  </fieldset>
+  
+  <!-- server-side boilerplate -->
+  <!-- 
+  * node.js, express 
+  * PHP
+  -->
+  
+  <input type="submit" value="Download">
+</form>
+
+<script src="js/jquery-1.7.1.js"></script>
+<script>
+
+// set package value in hidden field for radio fields
+function setRadioValue(el) {
+  $('#'+el.attr('name')).val(el.val());
+}
+
+$(function() {
+  $('input[type=radio]:checked').each(function() {
+    setRadioValue($(this));
+  });
+});
+
+$('input[type=radio]').on('change', function(event) {
+  var el = $(event.target);
+  setRadioValue(el);
+});
+
+</script>

@@ -4,9 +4,12 @@
   "description": "Website for getbackbone.org",
   "version": "0.1.1",
   "homepage": "http://getbackbone.org",
-  "main": "server.js",
+  "private": true,
+  "main": "app.js",
   "dependencies": {
-    "express": "2.5.x"
+    "express": "2.5.8",
+    "zipstream": "0.2.1",
+    "express-hogan.js": "0.2.0"
   },
   "devDependencies": {},
   "engines": {
