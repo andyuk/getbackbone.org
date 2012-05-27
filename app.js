@@ -1,8 +1,3 @@
-
-/**
- * Module dependencies.
- */
-
 var express = require('express'),
     routes = require('./routes'),
     hogan = require('express-hogan.js');

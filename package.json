@@ -9,7 +9,10 @@
   "dependencies": {
     "express": "2.5.8",
     "zipstream": "0.2.1",
-    "express-hogan.js": "0.2.0"
+    "express-hogan.js": "0.2.0",
+    "async": "0.1.21",
+    "backbone": "latest",
+    "underscore": "latest"
   },
   "devDependencies": {},
   "engines": {
