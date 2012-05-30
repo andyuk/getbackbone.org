@@ -1,0 +1,46 @@
+body {
+  background: #F4F4F4 url('../img/background.png')
+}
+.container {
+  background-color: #FFF;
+  max-width: 700px;
+  text-align: center;  
+  border-right: 1px solid #BBB;
+  box-shadow: 0 0 20px #CCC;
+  -webkit-box-shadow: 0 0 20px #CCC;
+}
+header {
+  margin: 30px;
+}
+h1 {
+  margin: 10px;
+}
+h1 .logo {
+  display: inline-block;
+  background: url('../img/backbone.png');
+  width: 451px;
+  height: 80px;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+form {
+  text-align: left;
+  margin: 30px;
+}
+fieldset {
+  padding: 4px;
+}
+fieldset.download {
+  margin: 0px;
+  text-align: center;
+}
+legend {
+  font-size: 15px;
+}
+.radio, .checkbox {
+  padding-left: 35px;
+  padding-top: 4px;
+}
+footer {
+  margin: 50px 0px 50px 0px;
+}
